@@ -1,0 +1,29 @@
+{
+  "name": "cursonodejs",
+  "version": "1.0.0",
+  "description": "Arquivos do Curso de NodeJS",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "commonjs": "^0.0.1",
+    "consign": "^0.1.6",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cavassin12/CursoNodeJS.git"
+  },
+  "author": "Vanderlei Cavassin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cavassin12/CursoNodeJS/issues"
+  },
+  "homepage": "https://github.com/cavassin12/CursoNodeJS#readme"
+}
