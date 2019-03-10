@@ -9,6 +9,7 @@ app.use(body.urlencoded({extended:true}));
 
 consign()
     .include('app/rotas')
+    .then('config/dbconn.js')
     .then('app/models')
     .into(app);
 
