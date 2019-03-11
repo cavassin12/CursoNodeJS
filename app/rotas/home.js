@@ -3,7 +3,7 @@ module.exports = function (appl) {
     var md5 = require('md5');
 
     appl.get('/', function (req, res) {
-        /*if(req.session.logado == true){
+       /* if(req.session.logado == true){
             console.log('não logado');
         }*/
         res.render('home/index');
