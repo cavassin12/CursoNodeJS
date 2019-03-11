@@ -3,7 +3,9 @@ function DaoLogin(conection){
 }
 
 DaoLogin.prototype.getLogar = function(user, senha, callback){
-    this._conn.query("select * from tb_usuarios where usuario = '" + user + "' and senha = '" + senha + "'", callback);
+    var quer = "select * from tb_usuarios where usuario = '" + user + "' and senha = '" + senha + "'";
+    //console.log(quer);
+    this._conn.query(quer, callback);
 }
 
 module.exports = function(){

@@ -20,6 +20,7 @@ module.exports = function(appl){
             res.redirect('/Login?error=senha');
         }else{
             v_senha = md5(dados.senha);
+            //console.log(v_senha);
         }
         
         let conna = appl.config.dbconn();
@@ -30,9 +31,10 @@ module.exports = function(appl){
                 console.log("Erro: " + error.message)
             }else{
                 if(resulta.length > 0){
-
+                        res.redirect('/');
                 }else{
                     console.log("nao a registros");
+                    res.redirect('/Login?error=ine');
                 }
 
             }

@@ -2,7 +2,7 @@ var mysql = require('mysql');
 
 var connmysql = function(){
     return connection = mysql.createConnection({
-        host: '127.0.0.01',
+        host: 'localhost',
         user: 'root',
         password: '',
         database: 'clifor'
