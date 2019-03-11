@@ -27,7 +27,7 @@ module.exports = function(appl){
 
         logi.getLogar(v_login, v_senha, function(error, resulta){
             if(error){
-                console.log("Erro: " + {error})
+                console.log("Erro: " + error.message)
             }else{
                 if(resulta.length > 0){
 
